@@ -1,0 +1,13 @@
+<%= form_for :q, method: :get,
+                url: '/', \
+                html: { class: 'navbar-form navbar-left' } do |f| %>
+  <div class="form-group">
+    <%= f.text_field :keywords, class: "form-control",
+                                value: finder.try(:keywords),
+                                placeholder: 'keywords' %>
+    <%= f.text_field :location, class: "form-control",
+                                    value: finder.try(:location) %>
+  </div>
+  <%= f.submit "Search", class: "btn btn-default btn-primary" %>
+  <span style='margin-left: 20px'><%= render('paginate', finder: finder) if finder %></span>
+<% end %>

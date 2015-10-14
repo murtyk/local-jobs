@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LocalJobs</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "http://maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry,places&region=US" %>
+  <%= javascript_include_tag "http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class='container-fluid'>
+    <%= yield %>
+  </div>
+
+  <%= javascript_include_tag 'application' %>
+</body>
+</html>

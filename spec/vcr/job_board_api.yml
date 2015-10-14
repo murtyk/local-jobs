@@ -1,0 +1,1419 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://authenticjobs.com/api/?api_key=c5e11c302cc0c345661fdf907946b5dc&format=json&keywords=ruby,rails&location=08817&method=aj.jobs.search&page=0&perpage=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:11:03 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.2-1ubuntu4.29
+      Set-Cookie:
+      - aj_awesome=tkd6ggc0fn5jbdgmre7tlk3c75; expires=Fri, 13-Nov-2015 15:11:03 GMT;
+        path=/; domain=.authenticjobs.com
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '127'
+      Content-Type:
+      - text/plain; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"listings":{"listing":[],"total":0,"perpage":"25","page":"0","pages":0,"last_update":"2015-10-14T06:56:38-05:00"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:11:04 GMT
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&l=08817&limit=25&publisher=<indeed_publisher>&q=ruby%20rails&radius=10&start=0&useragent=Mozilla//4.0(Firefox)&userip=127.1.1.1&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:11:05 GMT
+      Set-Cookie:
+      - BIGipServerjob_iad=!IqejembiR5FxqMQy/K0RIBljf+FsDWMMqtvYyeQ5oAiuguZoWoQw6Bi7+3BiwC8EgL/IPolxxIgfQhU=;
+        path=/
+      - CTK=1a1jef61b5uok8hu; Domain=.indeed.com; Expires=Mon, 18-Oct-2032 09:59:36
+        GMT; Path=/
+      - JSESSIONID=5F647A88CFB0574944A8FE323554CD87.jasxB_iad-job20; Path=/; HttpOnly
+      - TS0115ce5c=0160a2beff59c10e9aad9061587dcb4a2dbfa95601faf797ae9680b09b48b0d687a0661e4180c6f5d295b6fd62495f2e528e4f9de6;
+        path=/; domain=.indeed.com
+      - TS016080f8=0160a2beff93ffee8a9345fef1742e17a3bc3e6c6de51b04a686b7246fcadfe39ee8055902fa990a33470300e9be88d688ebb21b53470cad5e1f1469f74ed1423939acaacfb280fdd4d13f5f350432a45ce5c65691;
+        Path=/
+      - ctkgen=1; Expires=Wed, 14-Oct-2015 15:14:05 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Wed, 14 Oct 2015 15:10:05 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"ruby rails\",\n    \"location\"
+        : \"08817\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\" :
+        true,\n    \n    \"radius\" : 10,\n    \n    \"start\" : 1,\n    \"end\" :
+        5,\n    \"totalResults\" : 5,\n     \n    \"pageNumber\" : 0,\n    \n\n    \"results\"
+        : [\n        \n                {\n                    \"jobtitle\" : \"Senior
+        C# Engineer- MVC, REST, SQL (Up to $120K)\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Edison\",\n
+        \                   \"state\" : \"NJ\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Edison, NJ\",\n                    \"source\"
+        : \"Workbridge Associates\",\n                    \"date\" : \"Tue, 22 Sep
+        2015 20:07:31 GMT\",\n                    \"snippet\" : \"Experience with
+        open source programming languages/frameworks, such as <b>Ruby</b> on <b>Rails</b>,
+        is considered a plus. My client in Edison, NJ is looking for a Senior C#...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=0c2755050ab18518&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiu40YgqpJ2fDP6G4LAtJpKO0x91S0AtcPYy3S4nKGW7_IWRxm6Kuse_47mS8IY75qk&indpubnum=<indeed_publisher>&atk=1a1jef6295uokdbl\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5260');\",\n                    \"jobkey\"
+        : \"0c2755050ab18518\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Edison, NJ\",\n                    \"formattedRelativeTime\" : \"21 days
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sr. Javascript/Python/Django/Ruby Developers\",\n                    \"company\"
+        : \"Case Interactive\",\n                    \"city\" : \"Edison\",\n                    \"state\"
+        : \"NJ\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Edison, NJ\",\n                    \"source\" : \"Dice\",\n                    \"date\"
+        : \"Sat, 03 Oct 2015 14:17:07 GMT\",\n                    \"snippet\" : \"<b>RAILS</b>,
+        Django, Node.js, etc.). Bull Development experience in Java 1.6 and higher,
+        J2EE development and Eclipse Javascript, Node.JS, Django, <b>Rails</b>, SQL,
+        Agile,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=589e78bd272b0790&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiu40YgqpJ2fDP6G4LAtJpKO0x91S0AtcPYy3S4nKGW7_IWRxm6Kuse_47mS8IY75qk&indpubnum=<indeed_publisher>&atk=1a1jef6295uokdbl\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5260');\",\n                    \"jobkey\"
+        : \"589e78bd272b0790\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Edison, NJ 08820\",\n                    \"formattedRelativeTime\" : \"11
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Full-stack C# Engineer- MVC, REST, SQL (Up to $100K)\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Edison\",\n
+        \                   \"state\" : \"NJ\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Edison, NJ\",\n                    \"source\"
+        : \"Workbridge Associates\",\n                    \"date\" : \"Tue, 22 Sep
+        2015 20:07:31 GMT\",\n                    \"snippet\" : \"Experience with
+        open source programming languages/frameworks, such as <b>Ruby</b> on <b>Rails</b>,
+        is considered a plus....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=79c81d0bd79f08fc&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiu40YgqpJ2fDP6G4LAtJpKO0x91S0AtcPYy3S4nKGW7_IWRxm6Kuse_47mS8IY75qk&indpubnum=<indeed_publisher>&atk=1a1jef6295uokdbl\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5260');\",\n                    \"jobkey\"
+        : \"79c81d0bd79f08fc\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Edison, NJ\",\n                    \"formattedRelativeTime\" : \"21 days
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior ASP.NET Engineer- Web Security (Up to $120K)\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Edison\",\n
+        \                   \"state\" : \"NJ\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Edison, NJ\",\n                    \"source\"
+        : \"Workbridge Associates\",\n                    \"date\" : \"Tue, 22 Sep
+        2015 20:07:31 GMT\",\n                    \"snippet\" : \"Experience with
+        open source programming languages/frameworks, such as <b>Ruby</b> on <b>Rails</b>,
+        is considered a plus. My client in Edison, NJ is looking for a Senior ASP...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=86c59519a78e51b5&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiu40YgqpJ2fDP6G4LAtJpKO0x91S0AtcPYy3S4nKGW7_IWRxm6Kuse_47mS8IY75qk&indpubnum=<indeed_publisher>&atk=1a1jef6295uokdbl\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5260');\",\n                    \"jobkey\"
+        : \"86c59519a78e51b5\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Edison, NJ\",\n                    \"formattedRelativeTime\" : \"21 days
+        ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Applications Engineer\",\n                    \"company\" : \"RCM
+        Technologies\",\n                    \"city\" : \"Edison\",\n                    \"state\"
+        : \"NJ\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Edison, NJ\",\n                    \"source\" : \"RCM Technologies\",\n
+        \                   \"date\" : \"Wed, 26 Aug 2015 19:01:53 GMT\",\n                    \"snippet\"
+        : \"<b>Ruby</b> or <b>Rails</b> experience is preferred, although not entirely
+        necessary... Edison NJ (possibly NYC)....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=d4b6a4c99e075303&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiu40YgqpJ2fDP6G4LAtJpKO0x91S0AtcPYy3S4nKGW7_IWRxm6Kuse_47mS8IY75qk&indpubnum=<indeed_publisher>&atk=1a1jef6295uokdbl\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '5260');\",\n                    \"jobkey\"
+        : \"d4b6a4c99e075303\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Edison, NJ 08837\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:11:04 GMT
+- request:
+    method: get
+    uri: https://authenticjobs.com/api/?api_key=c5e11c302cc0c345661fdf907946b5dc&format=json&keywords=ruby,rails&location=Philadelphia,PA&method=aj.jobs.search&page=0&perpage=25
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:13:58 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.3.2-1ubuntu4.29
+      Set-Cookie:
+      - aj_awesome=50vkvm6rua1vbqsans2she0vp7; expires=Fri, 13-Nov-2015 15:13:58 GMT;
+        path=/; domain=.authenticjobs.com
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/plain; charset=utf-8
+      Vary:
+      - Accept-Encoding, User-Agent
+      Content-Length:
+      - '6723'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"listings":{"listing":[{"id":"25933","title":"Software Engineer","description":"<p>We
+        are a design driven team of three founders, focused on impeccable user experience.
+        Simplicity, quality, and care inform our decisions and processes. We believe
+        in a collaborative, feedback-rich design process, and feel that great experiences
+        can only come from teams who care deeply. This is the company we&rsquo;ve
+        always wanted to exist. We share what this all means to us&nbsp;<a href=\"https:\/\/delighted.com\/blog\"
+        target=\"_blank\">on our blog<\/a>.<br \/><br \/>You&rsquo;re a product minded
+        software engineer who evaluates all of your work through the lens of user
+        experience, regardless of which layer of the stack you&rsquo;re working in.
+        You&rsquo;ve created a number of fully-formed software products that have
+        been released into the wild. You believe that code is a means to an end, not
+        the end itself.<br \/><br \/>Because the range of projects is diverse, we
+        need a full-stack Rails engineer with experience working on a wide variety
+        of products. You&rsquo;ll work on projects like: improving our natural language
+        date range search, implementing integrations with 3rd party services, or working
+        to improve the responsiveness and reliability of our API. You&rsquo;ll also
+        work with the entire team in creating new customer-facing features, from idea,
+        through prototype, to release and maintenance.\n<ul>\n<li>Our backend runs
+        on Rails with MySQL, Redis, and Elasticsearch on AWS. You should have experience
+        building scalable and maintainable services with Rails.<\/li>\n<li>Our front-end
+        is built with CoffeeScript, SASS and HAML. You should have a deep understanding
+        of HTML, CSS and Javascript.<\/li>\n<li>The glue between our front-end and
+        back-end is HTTP, so you should have a thorough understanding of this part
+        of the stack including: cookies, caching, AJAX, cross-domain sharing, security
+        issues, etc.<\/li>\n<li>We write automated tests for all of our code. You
+        should be passionate about testing since you know it&rsquo;s the only way
+        to deliver high quality software.<\/li>\n<\/ul>\nWe&rsquo;d love for you to
+        work with us in Palo Alto, but we&rsquo;re open to the right person, anywhere.<br
+        \/><br \/>If you&rsquo;re interested, please send a link to your Github account
+        and any products you&rsquo;ve worked on recently that you are particularly
+        proud of. We prefer great work over resumes.<\/p>","perks":null,"howto_apply":"","post_date":"2015-10-13
+        12:44:03","relocation_assistance":0,"telecommuting":1,"category":{"id":"2","name":"Back-end
+        Development"},"type":{"id":"1","name":"Full-time"},"company":{"id":"delighted","name":"Delighted","url":"https:\/\/delighted.com","type":"1","location":{"id":"paloaltocacaus","name":"Palo
+        Alto, CA, CA, US","city":"Palo Alto, CA","country":"US","lat":"37.4447","lng":"-122.161","state":"CA"},"logo":"http:\/\/www.authenticjobs.com\/logos\/delighted_1440183181.png","tagline":"The
+        fastest and easiest way to gather actionable feedback"},"keywords":"work,should,have,experience,software,working,products,engineer,from,only,great,services,range,projects,your,means,rails,code,yoursquoll,through,understanding,yoursquore,user,stack,team,backend,design,care,quality,frontend","apply_email":"jobs@delighted.com","url":"http:\/\/www.authenticjobs.com\/jobs\/25933\/software-engineer"},{"id":"25651","title":"Full-Stack
+        Web Devloper","description":"<p>Carney+Co. is looking for a full time, in-house
+        web developer to join our growing creative team.<br \/><br \/><strong>Requirements<\/strong><br
+        \/>\n<ul>\n<li>Experience with writing and shipping maintainable code which
+        meets the needs of the user<\/li>\n<li>Enthusiasm for learning and adapting
+        to new tools and techniques<\/li>\n<li>Excellent communication skills and
+        ability to work effectively as part of a team<\/li>\n<li>Willingness and ability
+        to work on a deadline in a fast-paced and challenging environment<\/li>\n<\/ul>\n&nbsp;<strong>Nice
+        to Haves<\/strong><br \/>\n<ul>\n<li>Several years experience with an MVC-style
+        web framework (frontend, backend, or both)<\/li>\n<li>Understanding of git,
+        or similar distributed version control software<\/li>\n<li>Knowledge of a
+        modern frontend JavaScript framework such as React, Angular, or Backbone<\/li>\n<li>Ability
+        to write responsive CSS using a grid framework (Bootstrap, Foundation, Bourbon\/Neat,
+        Suzy)<\/li>\n<\/ul>\n<strong>&nbsp;Bonus Points<\/strong><br \/>\n<ul>\n<li>Unix
+        server administration and maintenance skills<\/li>\n<li>Deep knowledge of
+        Ruby on Rails development and practices<\/li>\n<li>Familiarity with REST API
+        design best practices<\/li>\n<\/ul>\nIf you&rsquo;re ready to get started,
+        send us a cover letter, r&eacute;sum&eacute;, your availability and any additional
+        materials you think we might like to see (github profile, recent projects
+        you&rsquo;ve worked on, etc.)<\/p>","perks":"- Ditch the downtown commute!\n-
+        Full health benefits and paid vacation days\n- Great coffee\n- Office-wide
+        stereo\n- Free gym \/ workout space\n- Skittle bar!","howto_apply":"","post_date":"2015-09-22
+        10:52:32","relocation_assistance":0,"telecommuting":0,"category":{"id":"2","name":"Back-end
+        Development"},"type":{"id":"1","name":"Full-time"},"company":{"id":"carneyco","name":"Carney+Co.","url":"http:\/\/carney.co","type":"3","location":{"id":"greensburgpapaus","name":"Greensburg,
+        PA, PA, US","city":"Greensburg, PA","country":"US","lat":"40.2993","lng":"-79.5432","state":"PA"},"logo":"http:\/\/www.authenticjobs.com\/logos\/carneyco_1442936887.png","tagline":"Elegant
+        design and dynamic development."},"keywords":"framework,ability,work,full,frontend,angular,react,write,responsive,such,backboneability,softwareknowledge,distributed,similar,bothunderstanding,version,control,modern,css,javascript,using,development,rails,ruby,knowledge,practicesfamiliarity,rest,practic","apply_email":"dev.team@carney.co","url":"http:\/\/www.authenticjobs.com\/jobs\/25651\/full-stack-web-devloper"},{"id":"25425","title":"Front-end
+        UI\/UX Developer and Designer","description":"<p>Talk Local is a Web 2.0 internet
+        technology start-up that has developed the next generation local search engine
+        that goes beyond just letting the consumer search and find local businesses.
+        Our technology connects consumers to local businesses within minutes who already
+        know the consumers service need and is ready to help. The management team
+        is comprised of many experienced and hardworking individuals who have a clear
+        vision and strategy to gain profitability. Talk Local is a venture-backed
+        company with prominent investors that include high profile VC''s, Angel''s,
+        and former Entrepreneurs who have been successful in the Web-Technology space
+        from all&nbsp;across the globe.<br \/><br \/>We are looking for a Front-end
+        UI\/UX developer with a creative mindset. If interested, please apply by sending
+        your resume along with your portfolio or sample websites you have designed
+        or created&nbsp;<br \/><br \/>Experience &amp; Skills: <br \/>&bull; Strong
+        web development expertise including HTML, CSS3, and JavaScript <br \/>&bull;
+        Experience with databases including MySQL, MS SQL, Oracle DB, or Access &bull;&nbsp;Familiarity
+        with any or all of the following web programming languages: PHP, Jquery, LAMP,
+        Perl, Python, Ruby, ASP <br \/>&bull; Familiarity with MVC style web frameworks
+        including Bootstrap, AngularJS, Backbone <br \/>&bull; Familiarity with AJAX,
+        XML<br \/>&bull; Familiarity with Git or similar version control <br \/>&bull;
+        Familiarity with mobile development including iOS and Android <br \/>&bull;
+        Knowledge of Amazon Web Services<\/p>","perks":"\u2022 Hands-on work experience
+        with an internet start-up from the ground up\n\u2022 Get to attend social\/entrepreneurial
+        events around the DC-MD-VA area \n\u2022 Snack bar and coffee\n\u2022 Fun
+        events such as bowling, BBQ\u2019s, putt-putt, laser tag, etc\n\u2022 Possible
+        equity participation for the right candidate","howto_apply":"Please send your
+        resume along with your portfolio or sample websites you have designed or created","post_date":"2015-08-26
+        18:39:30","relocation_assistance":0,"telecommuting":0,"category":{"id":"4","name":"Front-end
+        Development"},"type":{"id":"1","name":"Full-time"},"company":{"id":"talklocal","name":"TalkLocal","url":"http:\/\/www.talklocal.com","type":"1","location":{"id":"collegeparkmdmdus","name":"College
+        Park, MD, MD, US","city":"College Park, MD","country":"US","lat":"38.9807","lng":"-76.9373","state":"MD"},"logo":"http:\/\/www.authenticjobs.com\/logos\/talklocal_1440632220.png","tagline":"Connecting
+        you quickly to a quality local professional"},"keywords":"bull,including,local,familiarity,have,development,search,businesses,frontend,technology,uiux,developer,talk,your,consumers,expertise,experience,databases,mysql,strong,javascript,css3,html,designed,resume,sending,apply,please,along,portfolio","apply_email":"aman@talklocal.com","url":"http:\/\/www.authenticjobs.com\/jobs\/25425\/front-end-ui-ux-developer-and-designer"}],"total":3,"perpage":"25","page":"0","pages":1,"last_update":"2015-10-14T06:56:38-05:00"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:13:59 GMT
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&l=Philadelphia,PA&limit=25&publisher=<indeed_publisher>&q=ruby%20rails&radius=10&start=0&useragent=Mozilla//4.0(Firefox)&userip=127.1.1.1&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:14:02 GMT
+      Set-Cookie:
+      - BIGipServerjob_iad=!BDga0TG5+wXG5Y0y/K0RIBljf+FsDVk2SDJrxkx/VTISt8SXm3doTnx3PhRRpFSXqWVvxY+m/Hn+Mg==;
+        path=/
+      - CTK=1a1jekisg5mcnafs; Domain=.indeed.com; Expires=Mon, 18-Oct-2032 10:02:33
+        GMT; Path=/
+      - JSESSIONID=5766A905B408D66AB994BC7BB13E2F01.jasxB_iad-job2; Path=/; HttpOnly
+      - TS0115ce5c=0160a2beffc1367c4f6dc2415613116ba4b21f80fd466c4aee87941277a626e7464a2ffe526f7468a42932f2499ef8a0f367fc2b30;
+        path=/; domain=.indeed.com
+      - TS016080f8=0160a2beff98bbe786cee211b5a8d20d6b60563184d26a09b43744c85ed80b6c22e10881bc054c6cf6c4ecbfa3391dba27c187690dd035e294aafb34e4827fec8dfd2beb70956dc0d35c9792ae1de475a9e5891f50;
+        Path=/
+      - ctkgen=1; Expires=Wed, 14-Oct-2015 15:17:02 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Wed, 14 Oct 2015 15:13:02 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"ruby rails\",\n    \"location\"
+        : \"Philadelphia,PA\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\"
+        : true,\n    \n    \"radius\" : 10,\n    \n    \"start\" : 1,\n    \"end\"
+        : 25,\n    \"totalResults\" : 71,\n     \n    \"pageNumber\" : 0,\n    \n\n
+        \   \"results\" : [\n        \n                {\n                    \"jobtitle\"
+        : \"Ruby on Rails Developer\",\n                    \"company\" : \"Artech
+        Information System LLC\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Artech Information System LLC\",\n                    \"date\"
+        : \"Wed, 07 Oct 2015 03:05:52 GMT\",\n                    \"snippet\" : \"Job
+        Description Must have skills: Ruby/Rails, JavaScript, HTML5, CSS3, Full-Stack
+        experience. Codes software applications to adhere to designs supporting\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=0e367b382151da49&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"0e367b382151da49\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"7
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby On Rails Developer\",\n                    \"company\" : \"WebLinc\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"WebLinc\",\n                    \"date\"
+        : \"Mon, 05 Oct 2015 08:28:00 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        gem creation/maintenance. Functional programming style in <b>Ruby</b>. You
+        will be assisted by a team of UI/UX designers, other <b>Ruby</b> on <b>Rails</b>
+        Tech Leads and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8a2e1c1cc483284f&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"8a2e1c1cc483284f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"9
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"job opening for Ruby on Rails(front end) developer, Philadelphia,PA\",\n
+        \                   \"company\" : \"Artech Infomation System\",\n                    \"city\"
+        : \"Philadelphia\",\n                    \"state\" : \"PA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Fri, 02 Oct 2015 14:51:39 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>. Front end developer(<b>Ruby</b> on <b>Rails</b>)*. Long term
+        Project*....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=230980ceb59ababa&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"230980ceb59ababa\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"12
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Cloud UI Developer\",\n                    \"company\" : \"Artech Information
+        System LLC\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Artech Information
+        System LLC\",\n                    \"date\" : \"Tue, 13 Oct 2015 03:05:52
+        GMT\",\n                    \"snippet\" : \"UI Development using Javascript,
+        HTML 5, <b>Ruby</b> on <b>Rails</b>. Knowledge of Agile/Scrum methodologies,
+        and the use of work management tools such as Rally....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=a67bf4605d84cb6f&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"a67bf4605d84cb6f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"APPLICATION DEVELOPER\",\n                    \"company\" : \"University
+        of Pennsylvania\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"University of
+        Pennsylvania\",\n                    \"date\" : \"Thu, 08 Oct 2015 12:17:50
+        GMT\",\n                    \"snippet\" : \"Knowledge of <b>Ruby</b> and <b>Ruby</b>-on-<b>Rails</b>
+        preferred; Position will serve as software developer in the External Relations
+        Group at the Linguistic Data Consortium ( LDC...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=7384b739cf2cbbc1&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"7384b739cf2cbbc1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"6
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sr. Software Engineer\",\n                    \"company\" : \"Comcast\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Comcast\",\n                    \"date\"
+        : \"Wed, 07 Oct 2015 19:31:23 GMT\",\n                    \"snippet\" : \"Oracle,
+        SQL Server, MySQL, and content management systems- Experience with Scala,
+        <b>Ruby</b> on <b>Rails</b>, AkkaEducation- Bachelors degree in Engineering
+        or Computer...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=840f0020b1a606b7&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"840f0020b1a606b7\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19103\",\n                    \"formattedRelativeTime\"
+        : \"6 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Full Stack Developer - VC Backed Startup\",\n                    \"company\"
+        : \"Inspire Energy\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Inspire Energy\",\n                    \"date\"
+        : \"Sat, 26 Sep 2015 05:18:59 GMT\",\n                    \"snippet\" : \"Whether
+        it\\u2019s enhancing our customer website (built on <b>Rails</b>), creating
+        a slick internal application (we like AngularJS) or making a complex data
+        problem easy to...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=d875df1ab47371cb&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"d875df1ab47371cb\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19125\",\n                    \"formattedRelativeTime\"
+        : \"18 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Web Developer\",\n                    \"company\" : \"Eastern Standard\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 21 Sep 2015 11:40:43 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>. Eastern Standard is currently looking for a full\\u00ADtime
+        web developer to add to our growing team of strategists, designers, and developers
+        at our...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=18a3591191a83786&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"18a3591191a83786\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19107\",\n                    \"formattedRelativeTime\"
+        : \"23 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby Developer\",\n                    \"company\" : \"Harvey Nash USA\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Harvey Nash USA\",\n
+        \                   \"date\" : \"Mon, 28 Sep 2015 23:53:48 GMT\",\n                    \"snippet\"
+        : \"3+ years of experience with <b>Ruby</b> on <b>Rails</b>. Our client in
+        Philadelphia, PA is seeking a <b>Ruby</b> on <b>Rails</b> Developer for a
+        long term contract position....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=092325266a728ea2&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"092325266a728ea2\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"15
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Python Web Developer\",\n                    \"company\" : \"Workbridge
+        Associates\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Workbridge Associates\",\n
+        \                   \"date\" : \"Fri, 02 Oct 2015 20:34:02 GMT\",\n                    \"snippet\"
+        : \"HTML, CSS, JavaScript, LESS, SASS, Grunt.js, angular.js, node.js, ember.js,
+        batman.js, knockout.js, backbone.js, JavaScript MVC, Client-side JavaScript,
+        Server...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8a67ee0ea083a903&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"8a67ee0ea083a903\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"11
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Quality Assurance Manager\",\n                    \"company\" : \"WebLinc\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"WebLinc\",\n                    \"date\"
+        : \"Tue, 13 Oct 2015 21:18:35 GMT\",\n                    \"snippet\" : \"Experience
+        with <b>Ruby</b> on <b>Rails</b> preferred. Experience with test automation
+        frameworks, such as Selenium, and using those respective tools\\u2019 languages
+        (or using...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=528ba3b4fbfaadce&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"528ba3b4fbfaadce\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"17
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Software Architect (Java, SOA)\",\n                    \"company\" : \"Jobspring
+        Partners\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Jobspring Partners\",\n
+        \                   \"date\" : \"Fri, 09 Oct 2015 23:28:42 GMT\",\n                    \"snippet\"
+        : \"Java, Engineer, Developer, Programmer, J2EE, Spring, Spring MVC, model
+        view controller, TDD, test driven development, DDD, domain driven design,
+        Eclipse, HTML,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=b1ceb5a174d87983&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"b1ceb5a174d87983\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"4
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Geospatial Software Developer - Python/Scala\",\n                    \"company\"
+        : \"Fecak Inc.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Fecak Inc.\",\n
+        \                   \"date\" : \"Mon, 12 Oct 2015 21:09:03 GMT\",\n                    \"snippet\"
+        : \"Azavea is a Philadelphia-based B Corporation ( explanation ) that is seeking
+        to expand their software development team. The company specializes in building\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=7643544d0747a315&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"7643544d0747a315\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RUBY ON RAILS DEVELOPER\",\n                    \"company\" : \"Panacea
+        IT Consultiing Inc.\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 31 Aug 2015 14:19:14 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, UI:. Solid web programming experience \\u2022 Seniority expertise
+        in software development using <b>Ruby</b> \\u2022 Expert level knowledge and
+        commercial experience...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=68bb76e15774fdaa&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"68bb76e15774fdaa\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby on Rails Developer\",\n                    \"company\" : \"Harvey
+        Nash USA\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Harvey Nash USA\",\n
+        \                   \"date\" : \"Thu, 24 Sep 2015 15:58:28 GMT\",\n                    \"snippet\"
+        : \"2+ years of experience with <b>Ruby</b> on <b>Rails</b>. Our client in
+        Philadelphia, PA is seeking a <b>Ruby</b> on <b>Rails</b> Developer for a
+        long term contract position....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=17940e55a8b94006&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"17940e55a8b94006\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"19
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior/Mid. Level .Net Web Developer\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Fri, 09 Oct 2015 23:28:44 GMT\",\n                    \"snippet\" : \"QA
+        Automation Engineer, QA, Automation, Engineer, Manual, Testing, Selenium,
+        WebDriver, Write Scripts, Scripting, Test Automation Framework, Java, <b>Ruby</b>
+        on <b>Rails</b>...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=64ae9fa439af23a9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"64ae9fa439af23a9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"4
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \".NET Developer (C#, angular, Web API)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Mon, 12 Oct 2015 23:38:04 GMT\",\n                    \"snippet\" : \"Python,
+        Engineer, Django, Flask, AWS, Developer, Programmer, Java, J2EE, Spring, Spring
+        MVC, model view controller, TDD, test driven development, DDD, domain...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=b270bebf93a05b2a&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"b270bebf93a05b2a\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Software Developer (Python, SQL, R Programming)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Mon, 05 Oct 2015 17:15:20 GMT\",\n                    \"snippet\" : \"Java,
+        Engineer, Developer, Programmer, J2EE, Spring, Spring MVC, model view controller,
+        TDD, test driven development, DDD, domain driven design, Eclipse, HTML,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=73402c7c73437ac1&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"73402c7c73437ac1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"8
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior to Mid Software Engineer - Python, AWS, PHP, node.js\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Wed, 23 Sep 2015 20:10:30 GMT\",\n                    \"snippet\" : \"Java,
+        J2EE, EJB 3.0, JSP, JSF, JAX-RS Servelts, REST, JSON, JBOSS, Hibernate, Struts,
+        SpringMVC, Core Java, Swing Javascript, ReactJS, node.js, backbone.js,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=980a13c68dcc6ddf&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"980a13c68dcc6ddf\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"20
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Software Engineer\",\n                    \"company\" : \"Fecak
+        Inc.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Fecak Inc.\",\n
+        \                   \"date\" : \"Fri, 09 Oct 2015 08:58:41 GMT\",\n                    \"snippet\"
+        : \"Expert knowledge of <b>Ruby</b> 2+, Enumerator classes and <b>Ruby</b>
+        idioms. Expert knowledge of <b>Rails</b> 4.1+ and ActiveRecord....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=0c9d053dd4f8fba9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"0c9d053dd4f8fba9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"5
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Ruby on Rails Developer\",\n                    \"company\" : \"Tonic
+        Design Co.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"StackOverflow
+        Jobs\",\n                    \"date\" : \"Thu, 01 Oct 2015 01:10:56 GMT\",\n
+        \                   \"snippet\" : \"Extensive experience with <b>Ruby</b>.
+        We are looking for a <b>Ruby</b> on <b>Rails</b> developer with a minimum
+        of 3-4 years experience....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=db722a8b56934382&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"db722a8b56934382\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"13
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Web Applications Engineer\",\n                    \"company\" :
+        \"RJMetrics\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"RJMetrics\",\n
+        \                   \"date\" : \"Fri, 02 Oct 2015 17:37:00 GMT\",\n                    \"snippet\"
+        : \"Clojure, PHP, Python, <b>Ruby</b>, Java. We are located in the heart of
+        Center City Philadelphia, convenient to all major <b>rail</b> lines....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=f413564b3f3d023b&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"f413564b3f3d023b\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19107\",\n                    \"formattedRelativeTime\"
+        : \"11 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"APPLICATION DEVELOPER SR\",\n                    \"company\" : \"University
+        of Pennsylvania\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"University of
+        Pennsylvania\",\n                    \"date\" : \"Thu, 01 Oct 2015 12:49:00
+        GMT\",\n                    \"snippet\" : \"Experience with indexing and search
+        technologies, such as Apache Lucene and Apache Solr, and <b>Ruby</b> on <b>Rails</b>
+        is desirable....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=ecd5876ceaa914be&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"ecd5876ceaa914be\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"13
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Web Developer\",\n                    \"company\" : \"The New York Code
+        + Design Academy\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Thu, 03 Sep 2015 20:39:19 GMT\",\n                    \"snippet\" : \"Candidates
+        should be well versed in HTML, CSS, basic JavaScript/JQuery, the terminal,
+        Git, GitHub, <b>Ruby</b>, Sinatra, and <b>Rails</b>....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=bc0e848c26735dcf&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"bc0e848c26735dcf\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior-Mid level Java Developer\",\n                    \"company\" :
+        \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Tue, 13 Oct 2015 21:09:04 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, Python, HTML, HTML5, CSS, CSS3, SaaS, LESS, SAAS, JavaScript,
+        JQuery, Angular.js, Ember.js, Backbone.js, Knockout.js, React.js, Handlebars.js,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=2fbae6ffa5c76106&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUSOvwib3Zoxs9qoSL6ZF7SCCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jekiu35mcn9kq\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2258');\",\n                    \"jobkey\"
+        : \"2fbae6ffa5c76106\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"18
+        hours ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:14:01 GMT
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&l=Philadelphia,PA&limit=25&publisher=<indeed_publisher>&q=ruby%20rails&radius=10&start=50&useragent=Mozilla//4.0(Firefox)&userip=127.1.1.1&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:19:10 GMT
+      Set-Cookie:
+      - BIGipServerjob_iad=!aI5+Bi14KQByYQ4y/K0RIBljf+FsDcQgITqaozwpbxyWmS4aGzqPmi8eaDcIoSvbfTFl0GG10+Tmw0o=;
+        path=/
+      - CTK=1a1jetvu153sgflm; Domain=.indeed.com; Expires=Mon, 18-Oct-2032 10:07:41
+        GMT; Path=/
+      - JSESSIONID=011DE835BEFCA682EFAEF1F073D4E68B.jasxB_iad-job38; Path=/; HttpOnly
+      - TS0115ce5c=0160a2beff81bb9a1e4c3f5805f11f38d213b66da56001d54513b3537a80541ac4fe61af3623773281bcbc71a2f0f2f1753a63a1cd;
+        path=/; domain=.indeed.com
+      - TS016080f8=0160a2beff5bd6be0eb44718ba4647bbbd6587305c02ec726fa7c66fab2511558b2ac8750f5b7d625810e2e180a709d3b9e14d8083b94dd263a6f74e6cf3cfba79933e0950a64917adebd1feef3a0b5f92e8dc09a0;
+        Path=/
+      - ctkgen=1; Expires=Wed, 14-Oct-2015 15:22:10 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Wed, 14 Oct 2015 15:18:10 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"ruby rails\",\n    \"location\"
+        : \"Philadelphia,PA\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\"
+        : true,\n    \n    \"radius\" : 10,\n    \n    \"start\" : 51,\n    \"end\"
+        : 71,\n    \"totalResults\" : 71,\n     \n    \"pageNumber\" : 2,\n    \n\n
+        \   \"results\" : [\n        \n                {\n                    \"jobtitle\"
+        : \"Ruby on Rails Developer\",\n                    \"company\" : \"Open Systems
+        Technologies\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Open Systems Technologies\",\n
+        \                   \"date\" : \"Thu, 30 Jul 2015 03:43:29 GMT\",\n                    \"snippet\"
+        : \"<b>Ruby</b> gem creation/maintenance. Functional programming style in
+        <b>Ruby</b>. 4+ years of experience (exceptions will be made for especially
+        amazing code samples with...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=d61e3de57df28eb9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"d61e3de57df28eb9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19106\",\n                    \"formattedRelativeTime\"
+        : \"30+ days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Ruby on Rails Developer ($110K-$150K / Employer-Paid Health Care
+        / Amazingly Talented Team)\",\n                    \"company\" : \"IT Pros
+        - Philadelphia\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"IT Pros - Philadelphia\",\n
+        \                   \"date\" : \"Wed, 14 Oct 2015 03:34:52 GMT\",\n                    \"snippet\"
+        : \"Successful candidates will have extensive <b>Ruby</b> on <b>Rails</b>
+        experience and have the ability to work in the Northern Liberties office on
+        a daily-basis....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=1389f548050922e5&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"1389f548050922e5\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"11
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Technical Team Lead (Java, Web Services)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Fri, 09 Oct 2015 23:28:44 GMT\",\n                    \"snippet\" : \"Java,
+        Engineer, Developer, Programmer, J2EE, Spring, Spring MVC, model view controller,
+        TDD, test driven development, DDD, domain driven design, Eclipse, HTML,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=54997e938cc3ea4b&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"54997e938cc3ea4b\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"4
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \".NET Developer (C#, ASP.NET MVC, WCF)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Cherry Hill\",\n
+        \                   \"state\" : \"NJ\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Cherry Hill, NJ\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Mon, 12 Oct 2015 23:38:09 GMT\",\n                    \"snippet\" : \"Python,
+        Engineer, Django, Flask, AWS, Developer, Programmer, Java, J2EE, Spring, Spring
+        MVC, model view controller, TDD, test driven development, DDD, domain...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=db86661258857a81&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"db86661258857a81\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Cherry Hill, NJ\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"NodeJS Engineer\",\n                    \"company\" : \"Workbridge Associates\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Workbridge Associates\",\n
+        \                   \"date\" : \"Wed, 23 Sep 2015 20:10:28 GMT\",\n                    \"snippet\"
+        : \"HTML, CSS, JavaScript, LESS, SASS, Grunt.js, angular.js, node.js, ember.js,
+        batman.js, knockout.js, backbone.js, JavaScript MVC, Client-side JavaScript,
+        Server...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=ea070382fc879637&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"ea070382fc879637\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"20
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sr. Front-End Developer\",\n                    \"company\" : \"WebLinc\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"StartUpHire\",\n
+        \                   \"date\" : \"Thu, 01 Oct 2015 08:15:33 GMT\",\n                    \"snippet\"
+        : \"Experience with <b>Ruby</b> on <b>Rails</b>. Philadelphia, Pennsylvania,
+        United States Web Development....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=50eb5bdd5a0f6da7&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"50eb5bdd5a0f6da7\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19106\",\n                    \"formattedRelativeTime\"
+        : \"13 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Mid to Senior Software Engineer- Scala, Java, AWS, DevOps, Python\",\n
+        \                   \"company\" : \"Workbridge Associates\",\n                    \"city\"
+        : \"Philadelphia\",\n                    \"state\" : \"PA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Tue, 22 Sep 2015 14:07:11 GMT\",\n                    \"snippet\" : \"Java,
+        Scala, J2EE, EJB 3.0, JSP, JSF, JAX-RS Servelts, REST, JSON, JBOSS, Hibernate,
+        Struts, SpringMVC, Core Java, Swing Javascript, ReactJS, node.js, backbone...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=9f84f3064b1437d9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"9f84f3064b1437d9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"22
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior Front End Developer\",\n                    \"company\" : \"Ciklum\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Wed, 01 Jul 2015 21:01:53 GMT\",\n                    \"snippet\" : \"1+
+        years <b>Ruby</b> on <b>Rails</b> experience. 1 - 3 years experience as a
+        front end developer (HTML, CSS, Javascript, <b>Ruby</b> on <b>Rails</b>)....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=2b020b5d5f7800c4&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"2b020b5d5f7800c4\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Technology Project Management Consultant\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Wed, 30 Sep 2015 14:26:50 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, Python, HTML, HTML5, CSS, CSS3, SaaS, LESS, SAAS, JavaScript,
+        JQuery, Angular.js, Ember.js, Backbone.js, Knockout.js, React.js, Handlebars.js,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=f87c0fb78360bcfc&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"f87c0fb78360bcfc\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"14
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Software Developer\",\n                    \"company\" : \"GlobeHealer\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 13 Jul 2015 21:08:38 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, HTML 5, Javascript:. Healthcare startup in Philadelphia looking
+        for expert coders to start developing UI platform with a leading UI/UX firm
+        and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=0f8dacdd95106402&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"0f8dacdd95106402\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Automation QA Tester (Contract- Up To $35/Hr)\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Mon, 21 Sep 2015 20:05:21 GMT\",\n                    \"snippet\" : \".NET,
+        SharePoint, Java, <b>Ruby</b>, Engineer, Developer, QA, Quality Assurance,
+        Testing, Test Engineer, Cucumber, Selenium, Watir, Capybara, Appium, J2EE,
+        Spring,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=af065f4359b73a9a&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"af065f4359b73a9a\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"22
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior DevOps Consultant (Permanent Position)\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Tue, 15 Sep 2015 19:51:55 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>,
+        Python or other development. DevOps, automation, chef, puppet, CFEngine, Ansible,
+        configuration, configuration management, Linux, RedHat, Ubuntu, Suse,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=842e5e60978c1956&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"842e5e60978c1956\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"28
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Adobe Experience Manager\",\n                    \"company\" : \"Reliable
+        software resources INC\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 28 Sep 2015 08:58:31 GMT\",\n                    \"snippet\" : \"Spring
+        MVC, JSF, STRUTS, <b>Ruby</b> on <b>Rails</b>. HTML5, css3, jQuery, Javascript,
+        <b>Ruby</b>. Adobe Experience Manager....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=6b6dd060ed7ed814&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"6b6dd060ed7ed814\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"16
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Application Development Specialist - IS&T\",\n                    \"company\"
+        : \"Thomas Jefferson University and Hospitals\",\n                    \"city\"
+        : \"Philadelphia\",\n                    \"state\" : \"PA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Thomas Jefferson University and Hospitals\",\n
+        \                   \"date\" : \"Fri, 07 Aug 2015 09:35:58 GMT\",\n                    \"snippet\"
+        : \"Designs, develops, documents, implements, and evaluates custom standalone,
+        web, and mobile applications and supporting interfaces using varied technologies,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=8420baec4baaf13e&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"8420baec4baaf13e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sitecore/.NET Developer\",\n                    \"company\" : \"Net2Source\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Net2Source\",\n
+        \                   \"date\" : \"Thu, 10 Sep 2015 07:06:41 GMT\",\n                    \"snippet\"
+        : \"HTML, JavaScript, TSQL , and web-based programming required (PHP, ASP.NET,
+        <b>Ruby</b> on <b>Rails</b>, Cold Fusion, etc), MS-SQL and SQL Server tools....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=38d024298dd4d4fa&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"38d024298dd4d4fa\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Tech Guru (CTO)\",\n                    \"company\" : \"Context Travel\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Context Travel\",\n
+        \                   \"date\" : \"Mon, 20 Jul 2015 20:14:32 GMT\",\n                    \"snippet\"
+        : \"<b>Ruby</b> on <b>Rails</b> expert. Philadelphia, PA (Fitlers Square)
+        &amp; remote....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=00a7c8573f73d3ec&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"00a7c8573f73d3ec\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19146\",\n                    \"formattedRelativeTime\"
+        : \"30+ days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Software Engineer/Architect\",\n                    \"company\"
+        : \"PeopleMetrics, Inc.\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"PeopleMetrics, Inc.\",\n                    \"date\"
+        : \"Tue, 30 Jun 2015 07:46:37 GMT\",\n                    \"snippet\" : \"At
+        least 5 years experience with Java, <b>Ruby</b>, C#, ASP.NET, PHP and MVC
+        Frameworks like <b>Rails</b>, etc.; PeopleMetrics is located in a fantastic
+        location in Center...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=7b043f8d1cfdfcda&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"7b043f8d1cfdfcda\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Mid to Senior Level PHP Developer - Full LAMP stack, Laravel, Amazon Web
+        Services\",\n                    \"company\" : \"Workbridge Associates\",\n
+        \                   \"city\" : \"Bala-Cynwyd\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Bala-Cynwyd, PA\",\n                    \"source\" : \"Workbridge Associates\",\n
+        \                   \"date\" : \"Tue, 29 Sep 2015 20:24:36 GMT\",\n                    \"snippet\"
+        : \"<b>Ruby</b> on <b>Rails</b>, Python, HTML, HTML5, CSS, CSS3, SaaS, LESS,
+        SAAS, JavaScript, JQuery, Angular.js, Ember.js, Backbone.js, Knockout.js,
+        React.js, Handlebars.js,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=6ea97e5b86efdae4&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"6ea97e5b86efdae4\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Bala-Cynwyd, PA\",\n                    \"formattedRelativeTime\" : \"14
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Platform Engineer\",\n                    \"company\" : \"CloudMine\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"CloudMine\",\n
+        \                   \"date\" : \"Wed, 17 Jun 2015 18:51:44 GMT\",\n                    \"snippet\"
+        : \"(and <b>Rails</b>) Node.js Lucene,. Our core technologies include MongoDB,
+        <b>Ruby</b>, Node.js, Kafka, and ElasticSearch. And working with Mongo via
+        <b>Ruby</b> and Node.js drivers...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8b3d36f98d656392&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"8b3d36f98d656392\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Web Developer - National SPORTS Organization - *World Renown\",\n                    \"company\"
+        : \"CyberCoders\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"CyberCoders\",\n
+        \                   \"date\" : \"Wed, 07 Oct 2015 10:07:00 GMT\",\n                    \"snippet\"
+        : \"<b>Ruby</b>, Python or JavaScript Expert (youll be an expert in <b>Ruby</b>
+        soon!). 2 years+ experience developing web applications with an OO and MVC
+        approach to code...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=adf5295d5be429a6&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"adf5295d5be429a6\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19112\",\n                    \"formattedRelativeTime\"
+        : \"7 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Full Stack Developer - Python, Java, JavaScript\",\n                    \"company\"
+        : \"CyberCoders\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"CyberCoders\",\n
+        \                   \"date\" : \"Wed, 07 Oct 2015 21:34:11 GMT\",\n                    \"snippet\"
+        : \"Full Stack Developer - Python, Java, JavaScript We are a well funded venture
+        backed startup growing rapidly and on a mission to democratize clean energy.
+        We\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=ae7fd62af8ebf62e&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUZYYmDzgp02Ix96iKbfz7s2hsjfvdGA6umcsB3xuL8E2&indpubnum=<indeed_publisher>&atk=1a1jeu03l53sgc8d\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '530');\",\n                    \"jobkey\"
+        : \"ae7fd62af8ebf62e\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19125\",\n                    \"formattedRelativeTime\"
+        : \"6 days ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:19:10 GMT
+- request:
+    method: get
+    uri: http://api.indeed.com/ads/apisearch?format=json&l=Philadelphia,PA&limit=25&publisher=<indeed_publisher>&q=ruby%20rails&radius=10&start=0&useragent=Mozilla//4.0(Firefox)&userip=127.1.1.1&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Oct 2015 15:19:32 GMT
+      Set-Cookie:
+      - BIGipServerjob_iad=!bEO25tlc09VfZHgy/K0RIBljf+FsDSv8znF2ACPIZB8V/pAMwn56oMmftPj2P/wRIRN9hufXZPhg4rs=;
+        path=/
+      - CTK=1a1jeulhj544icpa; Domain=.indeed.com; Expires=Mon, 18-Oct-2032 10:08:03
+        GMT; Path=/
+      - JSESSIONID=DD2AB3FD4D206A25F6EC971B0936D968.jasxB_iad-job40; Path=/; HttpOnly
+      - TS0115ce5c=0160a2beffb6abb096c40141997d12f901424d8da1fc88f9ebd3f9c1b08c15b0e7d962169a51850cd128b13fd2bd23c364b3d67e04;
+        path=/; domain=.indeed.com
+      - TS016080f8=0160a2beff3a04497ce7d71453963dc7eee266f8dc07fe6403d5cec64bb726b9061926de5bc96c40105d69c8f361802a553ad61a292797c8d7b2636677db133fdd8466d1a0087873b33cb525724a6cd683e1be2663;
+        Path=/
+      - ctkgen=1; Expires=Wed, 14-Oct-2015 15:22:32 GMT; Path=/
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, private
+      Expires:
+      - Wed, 14 Oct 2015 15:18:32 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - User-Agent,Accept-Encoding
+      Content-Type:
+      - application/javascript;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n {\n\n    \"version\" : 2,\n    \"query\" : \"ruby rails\",\n    \"location\"
+        : \"Philadelphia,PA\",\n    \n    \"dupefilter\" : true,\n     \n    \"highlight\"
+        : true,\n    \n    \"radius\" : 10,\n    \n    \"start\" : 1,\n    \"end\"
+        : 25,\n    \"totalResults\" : 71,\n     \n    \"pageNumber\" : 0,\n    \n\n
+        \   \"results\" : [\n        \n                {\n                    \"jobtitle\"
+        : \"Ruby on Rails Developer\",\n                    \"company\" : \"Artech
+        Information System LLC\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Artech Information System LLC\",\n                    \"date\"
+        : \"Wed, 07 Oct 2015 03:05:52 GMT\",\n                    \"snippet\" : \"Job
+        Description Must have skills: Ruby/Rails, JavaScript, HTML5, CSS3, Full-Stack
+        experience. Codes software applications to adhere to designs supporting\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=0e367b382151da49&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"0e367b382151da49\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"7
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby On Rails Developer\",\n                    \"company\" : \"WebLinc\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"WebLinc\",\n                    \"date\"
+        : \"Mon, 05 Oct 2015 08:28:00 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        gem creation/maintenance. Functional programming style in <b>Ruby</b>. You
+        will be assisted by a team of UI/UX designers, other <b>Ruby</b> on <b>Rails</b>
+        Tech Leads and...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8a2e1c1cc483284f&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"8a2e1c1cc483284f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"9
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"job opening for Ruby on Rails(front end) developer, Philadelphia,PA\",\n
+        \                   \"company\" : \"Artech Infomation System\",\n                    \"city\"
+        : \"Philadelphia\",\n                    \"state\" : \"PA\",\n                    \"country\"
+        : \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Fri, 02 Oct 2015 14:51:39 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>. Front end developer(<b>Ruby</b> on <b>Rails</b>)*. Long term
+        Project*....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=230980ceb59ababa&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"230980ceb59ababa\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"12
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Cloud UI Developer\",\n                    \"company\" : \"Artech Information
+        System LLC\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Artech Information
+        System LLC\",\n                    \"date\" : \"Tue, 13 Oct 2015 03:05:52
+        GMT\",\n                    \"snippet\" : \"UI Development using Javascript,
+        HTML 5, <b>Ruby</b> on <b>Rails</b>. Knowledge of Agile/Scrum methodologies,
+        and the use of work management tools such as Rally....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=a67bf4605d84cb6f&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"a67bf4605d84cb6f\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"APPLICATION DEVELOPER\",\n                    \"company\" : \"University
+        of Pennsylvania\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"University of
+        Pennsylvania\",\n                    \"date\" : \"Thu, 08 Oct 2015 12:17:50
+        GMT\",\n                    \"snippet\" : \"Knowledge of <b>Ruby</b> and <b>Ruby</b>-on-<b>Rails</b>
+        preferred; Position will serve as software developer in the External Relations
+        Group at the Linguistic Data Consortium ( LDC...\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=7384b739cf2cbbc1&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"7384b739cf2cbbc1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"6
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Sr. Software Engineer\",\n                    \"company\" : \"Comcast\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Comcast\",\n                    \"date\"
+        : \"Wed, 07 Oct 2015 19:31:23 GMT\",\n                    \"snippet\" : \"Oracle,
+        SQL Server, MySQL, and content management systems- Experience with Scala,
+        <b>Ruby</b> on <b>Rails</b>, AkkaEducation- Bachelors degree in Engineering
+        or Computer...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=840f0020b1a606b7&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"840f0020b1a606b7\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19103\",\n                    \"formattedRelativeTime\"
+        : \"6 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Full Stack Developer - VC Backed Startup\",\n                    \"company\"
+        : \"Inspire Energy\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Inspire Energy\",\n                    \"date\"
+        : \"Sat, 26 Sep 2015 05:18:59 GMT\",\n                    \"snippet\" : \"Whether
+        it\\u2019s enhancing our customer website (built on <b>Rails</b>), creating
+        a slick internal application (we like AngularJS) or making a complex data
+        problem easy to...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=d875df1ab47371cb&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"d875df1ab47371cb\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19125\",\n                    \"formattedRelativeTime\"
+        : \"18 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Web Developer\",\n                    \"company\" : \"Eastern Standard\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 21 Sep 2015 11:40:43 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>. Eastern Standard is currently looking for a full\\u00ADtime
+        web developer to add to our growing team of strategists, designers, and developers
+        at our...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=18a3591191a83786&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"18a3591191a83786\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19107\",\n                    \"formattedRelativeTime\"
+        : \"23 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby Developer\",\n                    \"company\" : \"Harvey Nash USA\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Harvey Nash USA\",\n
+        \                   \"date\" : \"Mon, 28 Sep 2015 23:53:48 GMT\",\n                    \"snippet\"
+        : \"3+ years of experience with <b>Ruby</b> on <b>Rails</b>. Our client in
+        Philadelphia, PA is seeking a <b>Ruby</b> on <b>Rails</b> Developer for a
+        long term contract position....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=092325266a728ea2&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"092325266a728ea2\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"15
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Python Web Developer\",\n                    \"company\" : \"Workbridge
+        Associates\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Workbridge Associates\",\n
+        \                   \"date\" : \"Fri, 02 Oct 2015 20:34:02 GMT\",\n                    \"snippet\"
+        : \"HTML, CSS, JavaScript, LESS, SASS, Grunt.js, angular.js, node.js, ember.js,
+        batman.js, knockout.js, backbone.js, JavaScript MVC, Client-side JavaScript,
+        Server...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=8a67ee0ea083a903&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"8a67ee0ea083a903\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"11
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Quality Assurance Manager\",\n                    \"company\" : \"WebLinc\",\n
+        \                   \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"WebLinc\",\n                    \"date\"
+        : \"Tue, 13 Oct 2015 21:18:35 GMT\",\n                    \"snippet\" : \"Experience
+        with <b>Ruby</b> on <b>Rails</b> preferred. Experience with test automation
+        frameworks, such as Selenium, and using those respective tools\\u2019 languages
+        (or using...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=528ba3b4fbfaadce&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"528ba3b4fbfaadce\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"18
+        hours ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Software Architect (Java, SOA)\",\n                    \"company\" : \"Jobspring
+        Partners\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Jobspring Partners\",\n
+        \                   \"date\" : \"Fri, 09 Oct 2015 23:28:42 GMT\",\n                    \"snippet\"
+        : \"Java, Engineer, Developer, Programmer, J2EE, Spring, Spring MVC, model
+        view controller, TDD, test driven development, DDD, domain driven design,
+        Eclipse, HTML,...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=b1ceb5a174d87983&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"b1ceb5a174d87983\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"4
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Geospatial Software Developer - Python/Scala\",\n                    \"company\"
+        : \"Fecak Inc.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Fecak Inc.\",\n
+        \                   \"date\" : \"Mon, 12 Oct 2015 21:09:03 GMT\",\n                    \"snippet\"
+        : \"Azavea is a Philadelphia-based B Corporation ( explanation ) that is seeking
+        to expand their software development team. The company specializes in building\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=7643544d0747a315&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"7643544d0747a315\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"RUBY ON RAILS DEVELOPER\",\n                    \"company\" : \"Panacea
+        IT Consultiing Inc.\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Mon, 31 Aug 2015 14:19:14 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, UI:. Solid web programming experience \\u2022 Seniority expertise
+        in software development using <b>Ruby</b> \\u2022 Expert level knowledge and
+        commercial experience...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=68bb76e15774fdaa&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"68bb76e15774fdaa\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Ruby on Rails Developer\",\n                    \"company\" : \"Harvey
+        Nash USA\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Harvey Nash USA\",\n
+        \                   \"date\" : \"Thu, 24 Sep 2015 15:58:28 GMT\",\n                    \"snippet\"
+        : \"2+ years of experience with <b>Ruby</b> on <b>Rails</b>. Our client in
+        Philadelphia, PA is seeking a <b>Ruby</b> on <b>Rails</b> Developer for a
+        long term contract position....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=17940e55a8b94006&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"17940e55a8b94006\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"19
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior/Mid. Level .Net Web Developer\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Fri, 09 Oct 2015 23:28:44 GMT\",\n                    \"snippet\" : \"QA
+        Automation Engineer, QA, Automation, Engineer, Manual, Testing, Selenium,
+        WebDriver, Write Scripts, Scripting, Test Automation Framework, Java, <b>Ruby</b>
+        on <b>Rails</b>...\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=64ae9fa439af23a9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"64ae9fa439af23a9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"4
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \".NET Developer (C#, angular, Web API)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Mon, 12 Oct 2015 23:38:04 GMT\",\n                    \"snippet\" : \"Python,
+        Engineer, Django, Flask, AWS, Developer, Programmer, Java, J2EE, Spring, Spring
+        MVC, model view controller, TDD, test driven development, DDD, domain...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=b270bebf93a05b2a&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"b270bebf93a05b2a\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"1
+        day ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Software Developer (Python, SQL, R Programming)\",\n                    \"company\"
+        : \"Jobspring Partners\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Jobspring Partners\",\n                    \"date\"
+        : \"Mon, 05 Oct 2015 17:15:20 GMT\",\n                    \"snippet\" : \"Java,
+        Engineer, Developer, Programmer, J2EE, Spring, Spring MVC, model view controller,
+        TDD, test driven development, DDD, domain driven design, Eclipse, HTML,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=73402c7c73437ac1&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"73402c7c73437ac1\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"8
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior to Mid Software Engineer - Python, AWS, PHP, node.js\",\n                    \"company\"
+        : \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Wed, 23 Sep 2015 20:10:30 GMT\",\n                    \"snippet\" : \"Java,
+        J2EE, EJB 3.0, JSP, JSF, JAX-RS Servelts, REST, JSON, JBOSS, Hibernate, Struts,
+        SpringMVC, Core Java, Swing Javascript, ReactJS, node.js, backbone.js,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=980a13c68dcc6ddf&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"980a13c68dcc6ddf\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"20
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Software Engineer\",\n                    \"company\" : \"Fecak
+        Inc.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Fecak Inc.\",\n
+        \                   \"date\" : \"Fri, 09 Oct 2015 08:58:41 GMT\",\n                    \"snippet\"
+        : \"Expert knowledge of <b>Ruby</b> 2+, Enumerator classes and <b>Ruby</b>
+        idioms. Expert knowledge of <b>Rails</b> 4.1+ and ActiveRecord....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=0c9d053dd4f8fba9&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"0c9d053dd4f8fba9\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"5
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Ruby on Rails Developer\",\n                    \"company\" : \"Tonic
+        Design Co.\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"StackOverflow
+        Jobs\",\n                    \"date\" : \"Thu, 01 Oct 2015 01:10:56 GMT\",\n
+        \                   \"snippet\" : \"Extensive experience with <b>Ruby</b>.
+        We are looking for a <b>Ruby</b> on <b>Rails</b> developer with a minimum
+        of 3-4 years experience....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=db722a8b56934382&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"db722a8b56934382\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"13
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Senior Web Applications Engineer\",\n                    \"company\" :
+        \"RJMetrics\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"RJMetrics\",\n
+        \                   \"date\" : \"Fri, 02 Oct 2015 17:37:00 GMT\",\n                    \"snippet\"
+        : \"Clojure, PHP, Python, <b>Ruby</b>, Java. We are located in the heart of
+        Center City Philadelphia, convenient to all major <b>rail</b> lines....\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=f413564b3f3d023b&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"f413564b3f3d023b\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA 19107\",\n                    \"formattedRelativeTime\"
+        : \"11 days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"APPLICATION DEVELOPER SR\",\n                    \"company\" : \"University
+        of Pennsylvania\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"University of
+        Pennsylvania\",\n                    \"date\" : \"Thu, 01 Oct 2015 12:49:00
+        GMT\",\n                    \"snippet\" : \"Experience with indexing and search
+        technologies, such as Apache Lucene and Apache Solr, and <b>Ruby</b> on <b>Rails</b>
+        is desirable....\",\n                    \"url\" : \"http://www.indeed.com/viewjob?jk=ecd5876ceaa914be&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"ecd5876ceaa914be\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"13
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Web Developer\",\n                    \"company\" : \"The New York Code
+        + Design Academy\",\n                    \"city\" : \"Philadelphia\",\n                    \"state\"
+        : \"PA\",\n                    \"country\" : \"US\",\n                    \"formattedLocation\"
+        : \"Philadelphia, PA\",\n                    \"source\" : \"Indeed\",\n                    \"date\"
+        : \"Thu, 03 Sep 2015 20:39:19 GMT\",\n                    \"snippet\" : \"Candidates
+        should be well versed in HTML, CSS, basic JavaScript/JQuery, the terminal,
+        Git, GitHub, <b>Ruby</b>, Sinatra, and <b>Rails</b>....\",\n                    \"url\"
+        : \"http://www.indeed.com/viewjob?jk=bc0e848c26735dcf&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"bc0e848c26735dcf\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : true,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"30+
+        days ago\"                \n}\n,\n                {\n                    \"jobtitle\"
+        : \"Junior-Mid level Java Developer\",\n                    \"company\" :
+        \"Workbridge Associates\",\n                    \"city\" : \"Philadelphia\",\n
+        \                   \"state\" : \"PA\",\n                    \"country\" :
+        \"US\",\n                    \"formattedLocation\" : \"Philadelphia, PA\",\n
+        \                   \"source\" : \"Workbridge Associates\",\n                    \"date\"
+        : \"Tue, 13 Oct 2015 21:09:04 GMT\",\n                    \"snippet\" : \"<b>Ruby</b>
+        on <b>Rails</b>, Python, HTML, HTML5, CSS, CSS3, SaaS, LESS, SAAS, JavaScript,
+        JQuery, Angular.js, Ember.js, Backbone.js, Knockout.js, React.js, Handlebars.js,...\",\n
+        \                   \"url\" : \"http://www.indeed.com/viewjob?jk=2fbae6ffa5c76106&qd=dbiWh_LzHK6bTV-fOfIZZy4W1XuyMuoLYvFaxaSvtiv2a75-iCCZh75WGCRthNM6C5JiBnYBmj4W8CSbRJzZUfg6bDZWTAdylB_NkUW380yCKK9yIaU5TQ06HvDF4Wc9&indpubnum=<indeed_publisher>&atk=1a1jeulj1544ia9f\",\n
+        \                   \"onmousedown\" : \"indeed_clk(this, '2660');\",\n                    \"jobkey\"
+        : \"2fbae6ffa5c76106\",\n                    \"sponsored\" : false,\n                    \"expired\"
+        : false,\n                    \"indeedApply\" : false,\n                    \"formattedLocationFull\"
+        : \"Philadelphia, PA\",\n                    \"formattedRelativeTime\" : \"18
+        hours ago\"                \n}\n\n    ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 14 Oct 2015 15:19:32 GMT
+recorded_with: VCR 2.9.2

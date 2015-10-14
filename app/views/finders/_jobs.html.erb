@@ -1,0 +1,21 @@
+<hr>
+<div class= 'row'>
+  <% finder.job_boards.each do |jb| %>
+    <div class='col-md-4'>
+      <%= render("attributions/#{jb.attribution_template}") %>
+      <h3><%= "#{jb.to_label} (#{jb.total_count})" %></h3>
+      <% jb.jobs.each do |job| %>
+        <p class='marker' lat='<%=job.latitude%>' lng='<%=job.longitude%>'>
+          <%= link_to "#{job.title}: #{job.company}", job.job_url, target: :blank %>
+          <br>
+          <em>location:</em> <%= job.city_state %>
+          <br>
+          <% desc = job.excerpt %>
+          <% desc = desc.gsub(/<\/?[^>]*>/, '').gsub(/\n\n+/, "\n").gsub(/^\n|\n$/, '')%>
+
+          <em>excerpt:</em> <%= desc.truncate(100) %>
+        </p>
+      <% end %>
+    </div>
+  <% end %>
+</div>

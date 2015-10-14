@@ -1,0 +1,10 @@
+<%= render 'nav_bar', finder: @finder %>
+<% if @finder %>
+  <div>
+    <div id="map" style='width: 100%; height: 300px;'></div>
+  </div>
+
+  <%= render('jobs', finder: @finder) %>
+
+  <%= content_tag :div, '', id: 'markers-div', data: { markers: @finder.markers } %>
+<% end %>

@@ -1,0 +1,12 @@
+<% if finder.total_pages > 1 %>
+  <%= link_to '<', root_path(q: params[:q].merge( page: finder.current_page - 1)),
+                        class: 'btn btn-flat btn-sm btn-primary',
+                        id: 'prev-button',
+                        disabled: finder.first_page? %>
+  <span style='color: white'><%= "Page #{finder.current_page} of #{finder.total_pages}" %></span>
+
+  <%= link_to '>', root_path(q: params[:q].merge( page: finder.current_page + 1)),
+                        class: 'btn btn-flat btn-sm btn-primary',
+                        id: 'next-button',
+                        disabled: finder.last_page? %>
+<% end %>
